@@ -1,0 +1,606 @@
+.toTop{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: all linear .3s;
+   opacity: 0;
+   visibility: hidden;
+    &:hover{
+        background-color: #ffcf03;
+        color: #000;
+    }
+    .toTop-icon{
+        font-size: 18px;
+        color: #000;
+    }
+}
+.showToTop{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    z-index: 50;
+    margin: 0;
+  }
+  
+  .navFixed {
+    top: -150px;
+}
+
+
+
+
+    .top-header-text  {
+        span{
+            font-size: 12px;
+            color: #6c757d;
+            font-weight: 400;
+        }
+    }
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e6e7e9;
+        padding: 8px 0;
+    }
+    .language-section{
+        display: flex;
+        align-items: center;
+        
+    }
+    .currency .svg-inline--fa , .lang .svg-inline--fa{
+        color: #6c757d;
+        font-size: 12px;
+        margin-inline-start: 3px;
+    }
+    .lang{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            &:hover{
+                .lang-details{
+                    opacity: 1 ;
+                    visibility: visible ;
+                }
+               
+            }
+        img{
+            margin-inline-end: 5px;
+        }
+        .lang-details{
+            position: absolute;
+            background-color: #000;
+            padding: 10px 20px;
+            z-index: 999;
+            top: 33px;
+            inset-inline-start: -15px;
+            min-width: 156px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all linear .3s;
+            ul li:first-child {
+                margin-bottom: 5px;
+            }
+            a {
+                font-size: 14px;
+                color: #ffffff;
+                font-weight: 500;
+                transition: 0.3s linear;
+                &:hover{
+                    color: #ffcf03;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .currency{
+        position: relative;
+        margin-inline-end: 16px;
+        &:hover{
+            .currency-details{
+                opacity: 1 ;
+                visibility: visible ;
+            }
+           
+        }
+        .currency-details{
+            position: absolute;
+            background-color: #000;
+            padding: 10px 20px;
+            top: 33px;
+            z-index: 999;
+            inset-inline-start: -14px;
+            min-width: 156px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all linear .3s;
+            ul li:first-child {
+                margin-bottom: 5px;
+            }
+            a {
+                font-size: 14px;
+                color: #ffffff;
+                font-weight: 500;
+                transition: 0.3s linear;
+                &:hover{
+                    color: #ffcf03;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    
+    .currency-text {
+        font-size: 14px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    
+    .lang{
+        cursor: pointer;
+    }
+    
+    
+ 
+
+
+//  end of header
+
+.main-nav{
+    padding: 5px 0 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.search{
+    width: 620px;
+}
+.search-item {
+    position: relative;
+    input{
+        width: 100%;
+        background-color: #fafafa;
+        font-size: 14px;
+        -webkit-padding-start: 20px;
+        padding-inline-start: 20px;
+        height: 44px;
+        color: #6c757d;
+        font-weight: 400;
+        border: 1px solid #e6e6e6;
+        &:focus{
+            outline: 1px solid #ffcf03 ;
+        }
+}
+}
+
+.search-icon{
+    border: none;
+    width: 35px;
+    height: 35px;
+    color: #000000;
+    background-color: #ffcf03;
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 5px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .svg-inline--fa{
+        font-size: 16px;
+        font-weight: 100;
+    }
+}
+
+.account-user{
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .account-text{
+        position: relative;
+        margin-inline-end: 10px;
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 30px;
+        }
+        
+        span{
+            font-size: 16px;
+        }
+       
+    }
+    .arrowDown{
+        font-size: 12px;
+    }
+    }
+
+
+    .account-details{
+        position: absolute;
+        background-color: #000;
+        padding: 10px 20px;
+        top: 33px;
+        z-index: 999;
+        inset-inline-start: 19px;
+        text-align: inset-inline-start;
+        min-width: 156px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .3s;
+        ul li:first-child {
+            margin-bottom: 5px;
+        }
+        a {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 500;
+            transition: 0.3s linear;
+            &:hover{
+                color: #ffcf03;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .account-text:hover .account-details{
+            opacity: 1 ;
+            visibility: visible ;
+           
+    }
+    .user i {
+        transition:  all linear .2s;
+    }
+    .user:hover i{
+        color: #ffcf03;
+    }
+    .user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.logo img{
+    max-width: 100%;
+}
+
+.shopping-cart{
+    display: flex;
+    align-items: center;
+    span{
+        text-transform: capitalize;
+    }
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart div {
+     position: relative;
+}
+.cart i{
+    font-size: 30px;
+    margin-inline-end: 4px;
+}
+.number{
+    width: 16px;
+    height: 16px;
+    background-color: rgb(255, 207, 3);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    top: -7px;
+    left: 22px;
+}
+
+@media screen and ( max-width : 1200px) {
+    .search{
+        width: 450px;
+    }
+ }
+
+@media screen and ( max-width : 992px) {
+    .account-user{
+        margin-bottom: 0;
+    }   .main-nav{
+    flex-wrap: wrap;
+    .search{
+        order: 3;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .logo{
+        order: 1;
+    }
+    .account-user{
+        order: 2;
+    }
+   }
+}
+
+
+nav{
+    background-color: #ffcf03;
+    padding: 14px 0;
+    margin: 20px 0;
+    .closeBtn{
+      display: none;
+    }
+}
+.ul-navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    li{
+        margin-inline-end: 26px;
+       
+        .anc{
+            font-size: 16px;
+            color: #000000;
+            font-weight: 700;
+            position: relative;
+        }
+        .topDealsRed{
+            color: red;
+        }
+    }
+    .li-drop:last-child{
+        margin-inline-end:0;
+    }  
+    .li-drop{
+        position: relative;
+        &::after
+        {
+            content: "\f107";
+            inset-inline-end: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: "line Awesome free";
+            font-weight: 900;
+            font-size: 11px;
+        }
+        &:hover{
+            .ul-drop{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+      
+    }
+    .ul-drop{
+        transition: all linear .3s;
+        position: absolute;
+        background-color: #000;
+        padding: 10px 20px;
+        z-index: 99999;
+        min-width: 210px;
+        top: 38px;
+        inset-inline-start: -19px;
+         opacity: 0;
+         visibility: hidden;
+         li {
+            margin-bottom: 5px;
+         }
+        a{
+            color: #fff;
+            transition: all linear .3s;
+            &:hover{
+                text-decoration: none;
+                color: #ffcf03;
+            }
+        }
+    }
+}
+
+
+.bars , .cart-icon{
+    display: none;
+    border: none;
+    background: transparent;
+}
+
+nav{
+  .top-header-text{
+    display: none;
+  }
+  .top-header{
+    display: none;
+  }
+}
+.account-user button{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.open-nav{
+  inset-inline-start: 0;
+  transition: all linear .5s;
+}
+
+
+@media  (max-width : 768px) {
+    .main-nav{
+        padding: 0;
+    }
+    .number{
+        top: -7px;
+        left: 26px;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .main-nav{
+        align-items: center;
+    }
+    
+    .account-user button{
+        background-color: transparent !important;
+        border: none !important;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .ul-navbar .li-drop .ul-drop{
+        transition: inherit;
+    }
+    .ul-navbar .li-drop:hover .ul-drop{
+        display: none;
+    }
+  .account-text{
+    padding: 0;
+  }
+  .cart{
+    padding: 0;
+  }
+  .bars{
+    font-size: 30px;
+  }
+
+  .account-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ul-navbar .li-drop{
+    width: 100%;
+    
+    &::after{  
+    top: 9px;
+    position: absolute;
+    inset-inline-end: 15px;
+    }
+  }
+  
+.acc-text{
+  display: none;
+}
+  .ul-navbar li{
+    margin-bottom: 10px;
+    margin-inline-end: 0;
+  }
+  .account-details{
+    position: absolute;
+    background-color: #000;
+    padding: 10px 20px;
+    top: 33px;
+    z-index: 999;
+    inset-inline-start: -56px;
+    text-align: center;
+    min-width: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+  }
+  nav{
+    margin: 0;
+    transition: all linear .5s !important;
+    .top-header-text{
+      display: none;
+    }
+    .closeBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      inset-inline-end: 20px;
+      top: 27px;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    }
+    z-index: 99;
+    position: fixed;
+    inset-inline-start: -100%;
+    width: 100% ;
+    height: 100% ;
+    top: 0;
+    background-color: #fff;
+    .ul-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    padding: 100px 0;
+    .top-header{
+      display: block;
+      position: absolute;
+      inset-inline-start: 20px ;
+      border-bottom: none;
+     top: 20px;
+  }
+  }
+  .top-header{
+    display: none;
+}
+.cart .shoppingText{
+    display: none;
+}
+.account-section{
+    margin-bottom: 0;
+}
+.bars{
+    display: block;
+}
+.account-user .account-text{
+    margin-inline-end: 0;
+    display: flex;
+    align-items: center;
+}
+.account-user{
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    
+  
+    .las{
+        margin : 0 5px;
+    }
+}
+
+.ul-navbar .li-drop .ul-drop{
+    visibility: visible ;
+    opacity: 1 ;
+    display: none;
+    position: static;
+    background-color: transparent;
+    a{
+        color: #000;
+    }
+}
+      }
+
+

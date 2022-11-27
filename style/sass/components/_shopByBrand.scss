@@ -1,0 +1,31 @@
+
+.shopByBrand{
+    position: relative;
+    padding-bottom: 110px;
+    .shopbrand-parent{
+        position: relative;
+    }
+    .swiper-wrapper{
+        display: flex;
+        align-items: center;
+    }
+ }
+ .shopBrand-item a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: auto;
+        max-width: 100%;
+    }
+ }
+
+ @media screen and(max-width: 768px) {
+    .shopBrand-item a{
+        img{
+            width: auto;
+            max-width: 85%;
+        }
+     }
+ }

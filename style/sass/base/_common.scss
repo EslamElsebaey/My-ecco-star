@@ -1,0 +1,55 @@
+p , h1 , h2 , h3 , h4 , h5 , h6 , div {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.title-text{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Tajawal";
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+img {
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  #ffd000;
+  }
+
+
+
+
+  @media screen and(max-width:768px) {
+    .container{
+      padding: 0 20px;
+    }
+    .title-text{
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+  }
+
+  //  previous & next buttons
+
+
+
+body{
+  font-family: "Tajawal" ;
+}
