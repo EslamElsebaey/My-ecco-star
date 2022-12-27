@@ -223,12 +223,12 @@ $(window).scroll(function(){
 
 
 $(".toTop").click(function(){
-  $('html, body').animate({scrollTop:0}, '1000');
+  $('html, body').animate({scrollTop:0}, 400);
 }) 
 
 
 $(".li-drop").click(function(){
-  $(this).children().next().slideToggle(500);
+  $(this).children().next().slideToggle(300);
 })
 
 
@@ -236,7 +236,7 @@ $(".li-drop").click(function(){
 if(window.innerWidth < 768){
   $(".col-lg-2 .list .ancor").click(function(e){
     e.preventDefault();
-  $(this).next().slideToggle(500);
+  $(this).next().slideToggle(300);
   $(this).toggleClass("test");
   })
 }

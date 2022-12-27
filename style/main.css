@@ -612,7 +612,7 @@ nav .top-header {
   }
   nav {
     margin: 0;
-    transition: all linear 0.5s !important;
+    transition: all linear 0.3s !important;
     z-index: 99;
     position: fixed;
     inset-inline-start: -100%;
